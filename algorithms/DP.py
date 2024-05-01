@@ -49,8 +49,10 @@ class KnapsackDP:
 
 if __name__ == "__main__":
     knapsack = KnapsackDP()
-    profit, items = knapsack.solve(165, [23, 31, 29, 44, 53, 38, 63, 85, 89, 82],
-                                   [92, 57, 49, 68, 60, 43, 67, 84, 87, 72], 10)
+    profit, items = knapsack.solve(165,
+                                   [23, 31, 29, 44, 53, 38, 63, 85, 89, 82],
+                                   [92, 57, 49, 68, 60, 43, 67, 84, 87, 72],
+                                   10)
 
     print(f"items: {items}, resulted weight: {knapsack.get_common_weight()}, resulted profit: {profit}")
     print(f"Comparisons count: {knapsack.get_comparisons_count()}")
